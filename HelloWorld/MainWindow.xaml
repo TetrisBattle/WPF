@@ -7,24 +7,11 @@
         xmlns:local="clr-namespace:HelloWorld"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
-        WindowStyle="None"
+        BorderThickness="0"
+        TitleCharacterCasing="Normal"
         ResizeMode="CanResize"
         WindowStartupLocation="CenterScreen">
-
     <Grid>
-        <Grid.Background>
-            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                <GradientStop Color="#2D2D30" Offset="0"/>
-                <GradientStop Color="#1E1E20" Offset="1"/>
-            </LinearGradientBrush>
-        </Grid.Background>
-
-        <Grid.RowDefinitions>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-
-        <local:TitleBar x:Name="TitleBar" Grid.Row="0"/>
         <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Grid.Row="1"/>
     </Grid>
 </mah:MetroWindow>
